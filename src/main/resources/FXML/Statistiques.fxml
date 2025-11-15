@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controllers.StatistiquesController"
+            prefHeight="300.0" prefWidth="500.0">
+
+    <VBox spacing="15" alignment="CENTER" layoutX="50" layoutY="30">
+        <Label text="📊 Statistiques du Parking" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Label fx:id="lblStatistiques"/>
+        <Button text="Fermer" fx:id="btnFermer"/>
+    </VBox>
+</AnchorPane>

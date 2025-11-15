@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controllers.InscriptionController"
+            prefHeight="300.0" prefWidth="400.0"
+            style="-fx-background-color: linear-gradient(to bottom, #ffffff, #dbeafe);">
+
+    <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="30"
+          style="-fx-background-color: linear-gradient(to bottom, #3b82f6, #1e40af);
+                 -fx-padding: 20px;
+                 -fx-border-radius: 15px;
+                 -fx-background-radius: 15px;
+                 -fx-alignment: center;
+                 -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);">
+
+        <Label text="📝 Inscription"
+               style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <TextField fx:id="txtNom" promptText="Nom"
+                   style="-fx-pref-width: 250px; -fx-pref-height: 35px; -fx-background-color: white;
+                          -fx-border-color: #1e40af; -fx-border-width: 1px; -fx-border-radius: 5px;
+                          -fx-background-radius: 5px; -fx-font-size: 14px; -fx-padding: 5px;"/>
+
+        <TextField fx:id="txtEmail" promptText="Email"
+                   style="-fx-pref-width: 250px; -fx-pref-height: 35px; -fx-background-color: white;
+                          -fx-border-color: #1e40af; -fx-border-width: 1px; -fx-border-radius: 5px;
+                          -fx-background-radius: 5px; -fx-font-size: 14px; -fx-padding: 5px;"/>
+
+        <PasswordField fx:id="txtMotDePasse" promptText="Mot de passe"
+                       style="-fx-pref-width: 250px; -fx-pref-height: 35px; -fx-background-color: white;
+                              -fx-border-color: #1e40af; -fx-border-width: 1px; -fx-border-radius: 5px;
+                              -fx-background-radius: 5px; -fx-font-size: 14px; -fx-padding: 5px;"/>
+
+        <Button text="S'inscrire" fx:id="btnValiderInscription"
+                style="-fx-background-color: #2563eb; -fx-text-fill: white; -fx-font-size: 14px;
+                       -fx-font-weight: bold; -fx-pref-width: 180px; -fx-pref-height: 40px;
+                       -fx-background-radius: 10px; -fx-border-radius: 10px;"/>
+    </VBox>
+
+</AnchorPane>

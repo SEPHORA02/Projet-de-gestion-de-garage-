@@ -1,0 +1,116 @@
+/* 🌟 Style général */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f4f4f4;
+}
+
+/* 🎯 Menu latéral */
+#menuBar {
+    -fx-background-color: #007bff;
+    -fx-padding: 20px;
+    -fx-pref-width: 220px;
+    -fx-pref-height: 600px;
+}
+
+/* 📌 Titre du menu */
+#titleLabel {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0;
+}
+
+/* 🟦 Boutons du menu */
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: #007bff;
+    -fx-font-size: 14px;
+    -fx-pref-width: 180px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+    -fx-text-fill: white;
+}
+
+/* 📌 Contenu principal */
+#mainContent {
+    -fx-padding: 20px;
+}
+
+/* 🏛️ TableView */
+.table-view {
+    -fx-border-color: #ddd;
+    -fx-background-color: white;
+    -fx-pref-width: 600px;
+    -fx-pref-height: 300px;
+}
+
+/* 🔠 Champs de texte */
+.text-field {
+    -fx-pref-width: 200px;
+    -fx-padding: 10px;
+    -fx-border-color: #007bff;
+}
+
+/* 📌 Titres */
+#headerLabel {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #007bff;
+}
+/* Style général */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #ECF0F1;
+}
+
+/* Style du menu latéral */
+VBox {
+    -fx-background-color: #2C3E50;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+}
+
+/* Style des boutons */
+Button {
+    -fx-background-color: #2980B9;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* 🌟 Style Global */
+.root {
+    -fx-font-family: "Arial";
+}
+
+/* 🟦 Style des boutons */
+.btn-custom {
+    -fx-background-color: #1E88E5;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* 🟦 Effet de survol */
+.btn-custom:hover {
+    -fx-background-color: #1565C0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+
+/* 🟦 Effet de clic */
+.btn-custom:pressed {
+    -fx-background-color: #0D47A1;
+}
+

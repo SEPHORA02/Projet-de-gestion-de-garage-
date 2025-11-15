@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controllers.HistoriqueController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox spacing="15" alignment="CENTER" layoutX="50" layoutY="30">
+        <Label text="📜 Historique du Parking" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <TableView fx:id="tableHistorique" prefWidth="550">
+            <columns>
+                <TableColumn text="Immatriculation" fx:id="colImmatriculation"/>
+                <TableColumn text="Action" fx:id="colAction"/>
+                <TableColumn text="Date" fx:id="colDate"/>
+            </columns>
+        </TableView>
+        <Button text="Fermer" fx:id="btnFermer"/>
+    </VBox>
+</AnchorPane>

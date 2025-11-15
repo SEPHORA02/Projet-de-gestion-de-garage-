@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controllers.ParkingStatusController"
+            prefWidth="600" prefHeight="400">
+
+    <VBox alignment="CENTER" spacing="15" layoutX="100" layoutY="50">
+
+        <!-- Message de bienvenue -->
+        <Label fx:id="labelBienvenue" text="" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: blue;"/>
+
+        <!-- Nombre de places occupées -->
+        <Label fx:id="labelPlacesOccupees" text="Places occupées : 0"
+               style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+        <!-- Champ pour entrer le matricule -->
+        <TextField fx:id="champMatricule" promptText="Entrez votre matricule" prefWidth="300"/>
+
+        <!-- Bouton pour vérifier -->
+        <Button text="Vérifier véhicule" fx:id="btnVerifier"/>
+
+        <!-- Résultat -->
+        <Label fx:id="labelResultat" text="" style="-fx-text-fill: red;"/>
+
+    </VBox>
+
+</AnchorPane>

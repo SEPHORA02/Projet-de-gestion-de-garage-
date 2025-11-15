@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controllers.AccueilController"
+            fx:id="rootPane"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Image de fond avec contraintes de taille -->
+    <ImageView fx:id="backgroundImage" fitWidth="600" fitHeight="400"
+               AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+               pickOnBounds="true" preserveRatio="false">
+        <image>
+            <Image url="@/images/parking.jpg"/>
+        </image>
+    </ImageView>
+
+    <!-- Conteneur des boutons avec meilleur centrage -->
+    <StackPane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <VBox fx:id="vboxContainer" alignment="CENTER" spacing="20" maxWidth="400">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <!-- Titre avec fond semi-transparent pour la lisibilité -->
+            <Label text="🚗 Bienvenue sur le Système de Gestion du Parking 🚗"
+                   style="-fx-font-size: 16px; -fx-text-fill: white; -fx-background-color: rgba(0,0,0,0.5); -fx-padding: 10;"
+                   wrapText="true" textAlignment="CENTER" maxWidth="350"/>
+
+            <Button text="Mode Administrateur" fx:id="btnAdmin"
+                    style="-fx-font-size: 14px;" maxWidth="200"/>
+            <Button text="Mode Utilisateur" fx:id="btnUtilisateur"
+                    style="-fx-font-size: 14px;" maxWidth="200"/>
+        </VBox>
+    </StackPane>
+
+</AnchorPane>
